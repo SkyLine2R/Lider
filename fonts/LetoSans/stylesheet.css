@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Leto Sans';
+    src: url('LetoSans-Thin.eot');
+    src: local('Leto Sans Thin'), local('LetoSans-Thin'),
+        url('LetoSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('LetoSans-Thin.woff2') format('woff2'),
+        url('LetoSans-Thin.woff') format('woff'),
+        url('LetoSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Leto Sans Condensed';
+    src: url('LetoSansCondensed-Regular.eot');
+    src: local('Leto Sans Condensed Regular'), local('LetoSansCondensed-Regular'),
+        url('LetoSansCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LetoSansCondensed-Regular.woff2') format('woff2'),
+        url('LetoSansCondensed-Regular.woff') format('woff'),
+        url('LetoSansCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Leto Sans';
+    src: url('LetoSans-Bold.eot');
+    src: local('Leto Sans Bold'), local('LetoSans-Bold'),
+        url('LetoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LetoSans-Bold.woff2') format('woff2'),
+        url('LetoSans-Bold.woff') format('woff'),
+        url('LetoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Leto Sans Condensed';
+    src: url('LetoSansCondensed-Thin.eot');
+    src: local('Leto Sans Condensed Thin'), local('LetoSansCondensed-Thin'),
+        url('LetoSansCondensed-Thin.eot?#iefix') format('embedded-opentype'),
+        url('LetoSansCondensed-Thin.woff2') format('woff2'),
+        url('LetoSansCondensed-Thin.woff') format('woff'),
+        url('LetoSansCondensed-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Leto Sans';
+    src: url('LetoSans-Regular.eot');
+    src: local('Leto Sans Regular'), local('LetoSans-Regular'),
+        url('LetoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LetoSans-Regular.woff2') format('woff2'),
+        url('LetoSans-Regular.woff') format('woff'),
+        url('LetoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Leto Sans Condensed';
+    src: url('LetoSansCondensed-Bold.eot');
+    src: local('Leto Sans Condensed Bold'), local('LetoSansCondensed-Bold'),
+        url('LetoSansCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LetoSansCondensed-Bold.woff2') format('woff2'),
+        url('LetoSansCondensed-Bold.woff') format('woff'),
+        url('LetoSansCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
