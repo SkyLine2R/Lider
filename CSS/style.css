@@ -3,7 +3,7 @@
 
 body {
   width: 1600px;
-  margin: auto;
+  margin-inline: auto;
   font-family: "Leto Sans", "Arial";
   color: #000000;
 }
@@ -157,6 +157,10 @@ header {
   margin-top: 13px;
 }
 
+.info-text-services {
+  margin-bottom: 40px;
+}
+
 .company-services {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
@@ -187,7 +191,7 @@ header {
   grid-column: 2 / 4;
   width: 583px;
   height: 289px;
-  margin: auto auto auto auto;
+  margin: auto;
 }
 
 .company-services .service img {
