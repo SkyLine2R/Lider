@@ -334,17 +334,13 @@ h3 {
   padding-left: 145px;
 }
 
-.h3-ekonom-1 {
+.h3-ekonom {
   top: -58px;
-}
-
-.h3-ekonom-2 {
-  top: -72px;
 }
 
 .ekonom-time a {
   position: relative;
-  top: -100px;
+  top: -80px;
   left: 44px;
   font-size: 18px;
   text-decoration: none;
@@ -424,6 +420,10 @@ h3 {
   color: white;
   text-transform: uppercase;
 }
+.button-transition {
+  transition: transform 0.3s ease-out;
+}
+
 .technical-task div:first-child {
   height: 464px;
 }
@@ -710,4 +710,8 @@ address > div > div:nth-child(2) {
 
 address[class="info-section"] {
   margin-top: 15px;
+}
+
+.messendger-icon:hover {
+  transform: scale(0.9);
 }
