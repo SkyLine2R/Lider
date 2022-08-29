@@ -262,20 +262,26 @@
       <legend>
         <h2>Заказать звонок</h2>
       </legend>
-      <label for="name">Имя</label>
-      <input name="name" id="name" type="text">
-      <label for="phone">Телефон</label>
-      <input name="phone" id="phone" type="phone" pattern="[/d]">
-      <label for="city">Город</label>
-      <input name="city" id="city" type="text">
+      <div class="input-field">
+        <input name="name" id="name" type="text" required>
+        <label for="name">Имя</label>
+      </div>
+      <div class="input-field">
+        <input name="phone" id="phone" type="tel" required>
+        <label for="phone">Телефон</label>
+      </div>
+      <div class="input-field">
+        <input name="city" id="city" type="text" required>
+        <label for="city">Город</label>
+      </div>
       <div class="date-time">
-        <div>
+        <div class="input-field date">
+          <input name="date" id="date" type="date" required>
           <label for="date">Дата</label>
-          <input name="date" id="date" type="text">
         </div>
-        <div>
+        <div class="input-field">
+          <input name="time" id="time" type="time" required>
           <label for="time">Время</label>
-          <input name="time" id="time" type="text">
         </div>
       </div>
       <div class="load-file">

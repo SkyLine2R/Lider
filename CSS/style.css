@@ -451,7 +451,7 @@ h3 {
 
 #request-call input {
   color: #a6a6a6;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   height: 35px;
   border-top: none;
   border-right: none;
@@ -465,6 +465,26 @@ h3 {
   font-size: 20px;
   width: 100%;
   display: flex;
+}
+#request-call input {
+  color: black;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#request-call label {
+  position: relative;
+  transition: 0.5s;
+  top: 30px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#request-call input:focus ~ label,
+#request-call input:valid ~ label {
+  top: 0;
 }
 
 #request-call label[for="date"],
@@ -503,10 +523,11 @@ h3 {
   display: flex;
   border: 1px dashed black;
   height: 92px;
+  transition: 0.5s;
 }
 
 .load-file:hover {
-  border-color: #9c2e29;
+  background-color: rgb(156, 46, 41);
 }
 
 #request-call p {
