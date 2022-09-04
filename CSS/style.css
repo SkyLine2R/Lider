@@ -526,18 +526,20 @@ h3 {
   justify-content: space-between;
 }
 
-.load-file label {
+#load-file label {
+  text-align: center;
+  line-height: 36px;
   align-items: center;
   justify-content: center;
-}
-
-.load-file label span {
   color: #000000;
   font-size: 25px;
-  padding-left: 5px;
 }
 
-#input_file {
+.load-file-label svg {
+  padding-right: 5px;
+}
+
+#input-file {
   visibility: hidden;
   position: absolute;
   left: 0;
@@ -551,7 +553,22 @@ h3 {
 }
 
 .load-file:hover {
-  background-color: rgb(156, 46, 41);
+  border: 1px dashed rgb(156, 46, 41);
+  transform: scale(1.05);
+}
+
+.load-file:hover span {
+  color: #9c2e29;
+  transition: color 0.5s;
+}
+
+.load-file svg {
+  fill: #000000;
+  transition: fill 0.5s;
+}
+
+.load-file:hover svg {
+  fill: #9c2e29;
 }
 
 #request-call p {
