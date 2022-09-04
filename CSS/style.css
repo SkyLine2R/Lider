@@ -46,6 +46,30 @@ header {
   padding-right: 26px;
 }
 
+.nav li a:where(:hover, :focus-visible) {
+  color: #9c2e29;
+}
+
+/* svg rect:where(:hover, :focus-visible) svg .arrow-in-menu {
+  stroke: #9c2e29;
+} */
+.arrow-in-menu-down {
+  stroke: #000000;
+}
+
+.arrow-in-menu-up {
+  stroke: #9c2e29;
+  visibility: hidden;
+}
+
+.nav:where(:hover, :focus-visible) .arrow-in-menu-down {
+  stroke: #9c2e29;
+}
+
+.menu-arrow-active {
+  color: #9c2e29;
+}
+
 .main-pictures {
   height: 726px;
 }
@@ -642,19 +666,29 @@ footer > div > div:nth-child(3) {
   height: 122px;
 }
 
-#drop-down-navigation-menu {
+.drop-down-navigation-menu {
   width: 776px;
   height: 296px;
   position: absolute;
   background-color: #fff;
-  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   top: 80px;
   left: 790px;
   z-index: 100;
-  visibility: hidden;
+  transition: all 0.3s linear;
 }
 
-#drop-down-navigation-menu ul {
+.drop-down-navigation-menu-hidden {
+  transform: scale(1, 0.9);
+  opacity: 0;
+}
+
+.drop-down-navigation-menu-visible {
+  transform: scale(1, 1);
+  opacity: 1;
+}
+
+.drop-down-navigation-menu ul {
   margin-top: 30px;
   margin-left: 40px;
   list-style: none;
@@ -665,11 +699,21 @@ footer > div > div:nth-child(3) {
   align-items: start;
 }
 
-#drop-down-navigation-menu li {
+.drop-down-navigation-menu li {
   width: 120px;
+  transition: all 0.2s linear;
 }
 
-#drop-down-navigation-menu a {
+.drop-down-navigation-menu li:where(:hover, :focus-visible) {
+  transform: scale(1.3);
+  color: #9c2e29;
+}
+
+.drop-down-navigation-menu li:where(:hover, :focus-visible) > a {
+  color: black;
+}
+
+.drop-down-navigation-menu a {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;

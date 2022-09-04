@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+  <script src="js/script.js" defer></script>
   <title>ЖСК "Лидер"</title>
 
 </head>
 
 <body>
-  <div id="drop-down-navigation-menu">
+  <div id="drop-down-navigation-menu" class="drop-down-navigation-menu drop-down-navigation-menu-hidden">
     <ul>
       <li><a href="#">
           <img src="/Image/menu-ico-built-up-roof.svg" alt="icons roof">
@@ -58,13 +59,12 @@
         alt="Логотип ЖСК Лидер"></a>
     <nav class="nav">
       <li><a href="/">Главная</a></li>
-      <li><a href="/" class="menu-arrow">Услуги
+      <li><a href="#" id="menu-arrow" class="menu-arrow">Услуги
           <svg width="14" height="5" viewBox="0 0 14 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L7 4L13 1" stroke="black" />
-          </svg>
+            <path d="M1 1L7 4L13 1" class="arrow-in-menu-down" />
         </a>
       </li>
-      <li><a href="/">О компании</a></li>
+      <li><a href="#">О компании</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </nav>
 
