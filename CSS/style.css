@@ -79,6 +79,10 @@ header {
   align-items: center;
 }
 
+.menu-arrow-active {
+  align-items: flex-end;
+}
+
 .menu-arrow svg {
   padding-left: 6px;
 }
@@ -192,6 +196,7 @@ header {
 }
 
 .service {
+  box-sizing: border-box;
   width: 370px;
   height: 350px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
@@ -222,7 +227,12 @@ header {
   filter: blur(3px);
 }
 
-.company-services .service img:hover {
+.company-services .service:hover {
+  border: 1px solid #9c2e29;
+  cursor: default;
+}
+
+.company-services .service:hover img {
   filter: blur(0);
 }
 
@@ -617,6 +627,7 @@ footer > div {
   justify-content: space-between;
   align-items: flex-start;
 }
+
 p {
   margin: 0;
 }
@@ -641,6 +652,10 @@ p {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.nav-button a:hover {
+  color: #9c2e29;
 }
 
 .menu-messengers div {
@@ -693,9 +708,6 @@ footer > div > div:nth-child(3) {
   left: 790px;
   z-index: 100;
   transition: all 0.3s linear;
-}
-
-.drop-down-navigation-menu-hidden {
   transform: scale(1, 0.9);
   opacity: 0;
 }

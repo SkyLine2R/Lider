@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div id="drop-down-navigation-menu" class="drop-down-navigation-menu drop-down-navigation-menu-hidden">
+  <div id="drop-down-navigation-menu" class="drop-down-navigation-menu">
     <ul>
       <li><a href="#">
           <img src="/Image/menu-ico-built-up-roof.svg" alt="icons roof">
@@ -62,6 +62,7 @@
       <li><a href="#" id="menu-arrow" class="menu-arrow">Услуги
           <svg width="14" height="5" viewBox="0 0 14 5" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L7 4L13 1" class="arrow-in-menu-down" />
+          </svg>
         </a>
       </li>
       <li><a href="#">О компании</a></li>
@@ -70,6 +71,13 @@
 
     <div class="citys-phones">
       <button>Москва</button><span class="color-brand">+7 (499) 350-97-60</span>
+      <div>
+        <ul>
+          <li>Cанкт-Петербург</li>
+          <li>Белгород></li>
+          <li>Другой город</li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
@@ -84,7 +92,7 @@
 
         <div class="picture-text">Строим, ремонтируем <br> и обслуживаем <b>жилые многоквартирные дома</b></div>
 
-        <a href="/"><img class="send-request button-animation button-transition" src="/Image/send-request.svg"
+        <a href="#form"><img class="send-request button-animation button-transition" src="/Image/send-request.svg"
             alt="Оставить заявку"></a>
       </div>
 
@@ -161,7 +169,7 @@
             качественная и эстетичная отделка фасадов. <br><br>
             Мы предлагаем своим клиентам <a href="#" class="color-brand">различные виды отделочных материалов</a> от
             ведущих производителей, а также профессиональную работу, выполненную в кратчайшие сроки.</p>
-          <a href="/"><img class="img-promo-send-request button-animation button-transition"
+          <a href="#form"><img class="img-promo-send-request button-animation button-transition"
               src="/Image/send-request-small.svg" alt="Оставить заявку" width="179px" height="110px">
           </a>
         </div>
@@ -212,7 +220,7 @@
           многоквартирных домов. <br><br>
           Наши менеджеры помогут подобрать подходящее решение под ваши любые запросы. Это может быть и задача по
           локальному ремонту, а можем - и строительство здания.</p>
-        <a href="#"><button class="button-animation button-transition">Оставить заявку</button></a>
+        <a href="#form"><button class="button-animation button-transition">Оставить заявку</button></a>
       </div>
     </div>
 
@@ -259,6 +267,8 @@
 
 
     <form id="request-call" action="#" method="post" enctype="multipart/form-data">
+      <a name="form"></a>
+
       <legend>
         <h2>Заказать звонок</h2>
       </legend>
@@ -312,7 +322,7 @@
         </address>
       </div>
       <div class="menu-messengers">
-        <nav>
+        <nav class="nav-button">
           <li><a href="/">Главная</a></li>
           <li><a href="/">Услуги</a></li>
           <li><a href="/">О компании</a></li>
