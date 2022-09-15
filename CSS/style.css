@@ -16,14 +16,14 @@ h2 {
 header {
   display: flex;
   height: 125px;
-  padding: 0 216px 0 216px;
+  padding-left: 216px;
   margin-bottom: 38px;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
 }
 
 .nav {
-  padding-left: 0px;
+  padding-left: 95px;
   list-style-type: none;
   display: inline-flex;
 }
@@ -50,9 +50,6 @@ header {
   color: #9c2e29;
 }
 
-/* svg rect:where(:hover, :focus-visible) svg .arrow-in-menu {
-  stroke: #9c2e29;
-} */
 .arrow-in-menu-down {
   stroke: #000000;
 }
@@ -87,6 +84,11 @@ header {
   padding-left: 6px;
 }
 
+.citys-phones {
+  visibility: hidden;
+  padding-left: 192px;
+}
+
 .citys-phones button {
   font-size: 18px;
   background-color: white;
@@ -97,9 +99,38 @@ header {
   margin-right: 15px;
 }
 
-.citys-phones button:hover {
+.citys-phones button:where(:hover, :focus-visible) {
   color: #9c2e29;
   border-bottom: 2px dotted black;
+  cursor: pointer;
+}
+
+.citys-phones-menu {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 1320px;
+  top: 50px;
+  line-height: 30px;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.citys-phones ul {
+  list-style-type: none;
+  padding: 7px 10px 7px 7px;
+  margin: 0;
+  background-color: #fff;
+}
+
+.citys-phones ul li:where(:hover, :focus-visible) {
+  border-bottom: 2px dotted #9c2e29;
   cursor: pointer;
 }
 
