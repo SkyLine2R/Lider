@@ -736,7 +736,7 @@ footer > div > div:nth-child(3) {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   top: 80px;
-  left: 790px;
+  left: 755px;
   z-index: 100;
   transition: all 0.3s linear;
   transform: scale(1, 0.9);
