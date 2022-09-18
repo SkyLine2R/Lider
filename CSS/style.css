@@ -187,6 +187,11 @@ header {
   width: 1170px;
 }
 
+.services {
+  margin-top: 52px;
+  margin-bottom: 172px;
+}
+
 .construction-tasks {
   margin-top: 84px;
   display: flex;
@@ -501,8 +506,8 @@ h3 {
 
 #request-call {
   width: 643px;
-  height: 847px;
-  margin: 185px auto 0 auto;
+  height: 800px;
+  margin: 107px auto 0 auto;
 }
 
 #request-call h2 {
@@ -515,7 +520,6 @@ h3 {
 }
 
 #request-call input {
-  color: #a6a6a6;
   margin-bottom: 40px;
   height: 35px;
   border-top: none;
@@ -523,6 +527,7 @@ h3 {
   border-left: none;
   border-bottom: 2px solid #9c2e29;
   outline: none;
+  color: black;
 }
 
 #request-call label,
@@ -530,9 +535,6 @@ h3 {
   font-size: 20px;
   width: 100%;
   display: flex;
-}
-#request-call input {
-  color: black;
 }
 
 .input-field {
@@ -646,7 +648,7 @@ h3 {
 }
 
 footer {
-  margin-top: 172px;
+  margin-top: 107px;
   height: 300px;
   background-color: #f7f6f5;
   padding: 64px 215px 0 215px;
