@@ -189,7 +189,7 @@ header {
 
 .services {
   margin-top: 52px;
-  margin-bottom: 172px;
+  margin-bottom: 0px;
 }
 
 .construction-tasks {
@@ -332,13 +332,32 @@ header {
   flex-wrap: wrap;
 }
 
-.red-background img {
-  margin: 18px 92px 0 186px;
+.about {
+  height: 449px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+.about h2 {
+  font-size: 35px;
 }
 
+.about p {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.red-background img {
+  margin: 0 92px 0 186px;
+}
+
+#about-image {
+  margin: 0;
+  margin-right: 66px;
+}
 .red-background div {
   width: 570px;
-  height: 590px;
+  height: auto;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -481,7 +500,87 @@ h3 {
   margin-bottom: 18px;
 }
 
-.technical-task button {
+.services button a {
+  text-decoration: none;
+  color: white;
+}
+
+.services svg {
+  position: relative;
+  top: 5px;
+  left: 10px;
+  padding-right: 37px;
+}
+
+.roof-question-about {
+  width: 1170px;
+  height: 820px;
+}
+
+.roof-question {
+  display: flex;
+  width: 1100px;
+  height: 104px;
+  margin-top: 143px;
+}
+
+.roof-question h2 {
+  width: 1000px;
+  height: 104px;
+  padding-left: 46px;
+  margin: 0;
+}
+
+.roof-tile {
+  width: 370px;
+  height: 320px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #a6a6a6;
+  padding: 25px 27px 0 27px;
+  margin-bottom: 30px;
+}
+
+.roof-tile p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #a6a6a6;
+}
+
+.roof-tile h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.roof-tile-container {
+  height: 640px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 41px;
+}
+
+.roof-question-example {
+  height: 721px;
+  margin-top: 120px;
+}
+
+.roof-question-example > h2 {
+  width: 1000px;
+}
+
+.roof-question-example > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.roof-question-example img {
+  padding-bottom: 30px;
+}
+
+:is(.services, .technical-task) button {
   width: 322px;
   height: 47px;
   background-color: #9c2e29;
@@ -580,6 +679,7 @@ h3 {
 
 .load-file-label svg {
   padding-right: 5px;
+  display: flex;
 }
 
 #input-file {
@@ -841,4 +941,14 @@ address[class="info-section"] {
 
 .messendger-icon:hover {
   transform: scale(0.9);
+}
+
+.header-bold {
+  width: 1000px;
+  height: 122px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 61px;
+  margin-bottom: 15px;
 }

@@ -4,7 +4,6 @@ const phones = {
   Белгород: "+7 (200) 200-44-60",
   "Ростов-на-Дону": "+7 (330) 540-44-60",
 };
-
 const mainMenu = qS("#drop-down-navigation-menu");
 const menuArrows = qS(".nav > li:nth-child(2)");
 const menuArrowActive = qS("#menu-arrow");
@@ -17,6 +16,8 @@ const citysPhones = qS("#citys-phones");
 const ownerCityPhone = qS("#owner-city-phone");
 
 let htmlCitys = "<ul>";
+
+getOwnerCity();
 
 for (let item in phones) {
   htmlCitys += `<li>${item}</li>`;
@@ -31,6 +32,12 @@ citysPhonesButton.onclick = () => {
     //выбор города
     citysPhonesButton.innerHTML = e.target.innerHTML;
     ownerCityPhone.innerHTML = phones[e.target.innerHTML];
+
+    let date = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000);
+    document.cookie = `ownerCity=${encodeURIComponent(
+      e.target.innerHTML
+    )}; expires=${date.toUTCString()}`;
+
     togglePhones();
   };
 };
@@ -66,7 +73,6 @@ document.onclick = (e) => {
 
 inputFile.onchange = function (e) {
   //Загрузка файлов в форме
-
   const fileName =
     this.files[0].name.length > 40
       ? this.files[0].name.slice(0, 35) + "..." + this.files[0].name.slice(-5)
@@ -87,4 +93,18 @@ function togglePhones() {
 
 function qS(properties) {
   return document.querySelector(properties);
+}
+
+function getOwnerCity() {
+  //Проверка наличия куки с городом пользователя, если его нет устанавливается МСК
+
+  const cookieUser = decodeURIComponent(document.cookie).split("=");
+
+  if (cookieUser[0] == "ownerCity") {
+    citysPhonesButton.innerHTML = cookieUser[1];
+    ownerCityPhone.innerHTML = phones[cookieUser[1]];
+  } else {
+    citysPhonesButton.innerHTML = "Москва";
+    ownerCityPhone.innerHTML = phones["Москва"];
+  }
 }
